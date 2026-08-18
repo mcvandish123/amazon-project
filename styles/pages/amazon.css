@@ -154,3 +154,11 @@
   padding: 8px;
   border-radius: 50px;
 }
+
+.appearAdd {
+  opacity: 1;
+}
+
+.add-cart-visible {
+  opacity: 1;
+}
