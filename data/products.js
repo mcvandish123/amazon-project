@@ -87,12 +87,14 @@ export function loadProductsFetch() {
   }).then((productsData) => {
     products = productsData
     .map((productDetails) => {
+
       if (productDetails.type === 'clothing') {
         return new Clothing(productDetails);
       } else if (productDetails.type === 'appliance') {
         return new Appliance(productDetails);
       }
       return new Product(productDetails);
+
     });
     console.log('load products');
   });
